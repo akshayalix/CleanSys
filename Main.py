@@ -66,9 +66,23 @@ def temp_perc():
         pyautogui.keyUp('Enter')
         time.sleep(float(1))
 
-        # Types _temp_ in run dailog box
+        # Types _%temp%_ in run dailog box
 
     type_temp_perc()
+
+def prefetch():
+
+    # Clean_stat for only _prefetch_
+
+    def type_prefetch():
+        pyautogui.typewrite('%temp%')
+        pyautogui.keyDown('Enter')
+        pyautogui.keyUp('Enter')
+        time.sleep(float(1))
+
+        # Types _prefetch_ in run dailog box
+
+    type_prefetch()
 
 
     
@@ -78,7 +92,13 @@ def select_all():
     pyautogui.keyUp("ctrl")
     pyautogui.keyUp("A")
 
+# To Press select_all_keymap
 
+def enter():
+    pyautogui.keyDown('Enter')
+    pyautogui.keyUp('Enter')
+    
+# To Press Enter_Key
 
 
 
