@@ -9,3 +9,9 @@ import os
 import time
 
 # keyboard = Controller()  # Define keyboard Controller.
+
+# Global Variables --
+
+global currentVersion 
+global author
+global name
