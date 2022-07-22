@@ -1,10 +1,10 @@
-# CleanSys 
+# CleanSys
 
  A application to clean system.
 
-## Cleaning 
+## Cleaning
 
- - %temp%
- - temp
- - prefetch
- - tree
+- %temp%
+- temp
+- prefetch
+- tree
