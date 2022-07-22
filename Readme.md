@@ -1,8 +1,8 @@
-# CleanSys #
+# CleanSys 
 
  A application to clean system.
 
-## Cleaning ##
+## Cleaning 
 
  - %temp%
  - temp
