@@ -25,80 +25,88 @@ name = "CleanSys"  # Script Name
 
 # Global def--
 
+def run():
+    pyautogui.hotkey("win", "r")
+
+    # opens run dailog box
+
 def temp():
+    pyautogui.typewrite('temp')
+    pyautogui.keyDown('Enter')
+    pyautogui.keyUp('Enter')
+    time.sleep(float(1))
 
-    # Clean_stat for only _temp_
-
-    def win():
-        pyautogui.keyDown('win')
-        pyautogui.keyUp('win')
-        time.sleep(float(1))
-    
-        # Open windows pannel
-    
-    def type_run():
-        pyautogui.typewrite('Run')
-        pyautogui.keyDown('Enter')
-        pyautogui.keyUp('Enter')
-        time.sleep(float(1))
-        
-        # Open Run Dailog box
-
-    def type_temp():
-        pyautogui.typewrite('temp')
-        pyautogui.keyDown('Enter')
-        pyautogui.keyUp('Enter')
-        time.sleep(float(1))
-
-        # Types _temp_ in run dailog box
-
-    win()
-    type_run()
-    type_temp()
+    # Types _temp_ in run dailog box
 
 def temp_perc():
+    pyautogui.typewrite('%temp%')
+    pyautogui.keyDown('Enter')
+    pyautogui.keyUp('Enter')
+    time.sleep(float(1))
 
-    # Clean_stat for only _%temp%_
-
-    def type_temp_perc():
-        pyautogui.typewrite('%temp%')
-        pyautogui.keyDown('Enter')
-        pyautogui.keyUp('Enter')
-        time.sleep(float(1))
-
-        # Types _%temp%_ in run dailog box
-
-    type_temp_perc()
+    # Types _%temp%_ in run dailog box
 
 def prefetch():
+    pyautogui.typewrite('%temp%')
+    pyautogui.keyDown('Enter')
+    pyautogui.keyUp('Enter')
+    time.sleep(float(1))
 
-    # Clean_stat for only _prefetch_
-
-    def type_prefetch():
-        pyautogui.typewrite('%temp%')
-        pyautogui.keyDown('Enter')
-        pyautogui.keyUp('Enter')
-        time.sleep(float(1))
-
-        # Types _prefetch_ in run dailog box
-
-    type_prefetch()
-
+    # Types _prefetch_ in run dailog box
 
     
 def select_all():
-    pyautogui.keyDown("ctrl")
-    pyautogui.keyDown("A")
-    pyautogui.keyUp("ctrl")
-    pyautogui.keyUp("A")
-
-# To Press select_all_keymap
+    pyautogui.hotkey("ctrl", "a")
+    
+    # To Press select_all_keymap
 
 def enter():
     pyautogui.keyDown('Enter')
     pyautogui.keyUp('Enter')
     
-# To Press Enter_Key
+    # To Press Enter_Key
+
+def perma_del():
+    pyautogui.hotkey("shift", "del")
+
+    # Press key_map permanent_delete
+
+
+
+def Clean_main():
+    
+    run()
+    temp()
+    time.sleep(float(1))
+    select_all()
+    time.sleep(float(1))
+    perma_del()
+    
+
+
+Clean_main()
+
+    
+
+        
+
+    
+
+    
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+    
 
 
 
