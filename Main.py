@@ -23,7 +23,7 @@ author = "Alix"   # Author info
 name = "CleanSys"  # Script Name
 
 
-# Global def--
+# Global def --
 
 def run():
     pyautogui.hotkey("win", "r")
@@ -95,7 +95,7 @@ def close_win():
 
 
 
-
+# Main def --
 
 def Clean_main():
     
@@ -115,9 +115,8 @@ def Clean_main():
     perma_del()
     time.sleep(float(1))
     skip()
-    enter()
-    close_win()
     time.sleep(float(1))
+    close_win()
     run()
     prefetch()
     enter()
@@ -126,14 +125,20 @@ def Clean_main():
     perma_del()
     time.sleep(float(1))
     skip()
-    close_win()
     time.sleep(float(1))
+    close_win()
     run()
     tree()
     
 
 
 Clean_main()
+
+print("====== Cleaning Done ======")
+
+time.sleep(float(2))
+
+exit()
 
     
 
