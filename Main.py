@@ -54,6 +54,14 @@ def prefetch():
 
     # Types _prefetch_ in run dailog box
 
+def tree():
+    pyautogui.typewrite('tree')
+    pyautogui.keyDown('Enter')
+    pyautogui.keyUp('Enter')
+    time.sleep(float(1))
+
+    # Types _tree_ in run dailog box
+
     
 def select_all():
     pyautogui.hotkey("ctrl", "a")
