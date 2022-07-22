@@ -52,6 +52,10 @@ def temp():
 
         # Types _temp_ in run dailog box
 
+    win()
+    type_run()
+    type_temp()
+
 def temp_perc():
 
     # Clean_stat for only _%temp%_
@@ -63,7 +67,18 @@ def temp_perc():
         time.sleep(float(1))
 
         # Types _temp_ in run dailog box
+
+    type_temp_perc()
+
+
     
+def select_all():
+    pyautogui.keyDown("ctrl")
+    pyautogui.keyDown("A")
+    pyautogui.keyUp("ctrl")
+    pyautogui.keyUp("A")
+
+
 
 
 
