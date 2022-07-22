@@ -47,7 +47,7 @@ def temp_perc():
     # Types _%temp%_ in run dailog box
 
 def prefetch():
-    pyautogui.typewrite('%temp%')
+    pyautogui.typewrite('prefetch')
     pyautogui.keyDown('Enter')
     pyautogui.keyUp('Enter')
     time.sleep(float(1))
@@ -88,6 +88,12 @@ def skip():
 
     # Initialize skip_protocal
 
+def close_win():
+    pyautogui.hotkey("alt", "f4")
+
+    # To close window
+
+
 
 
 
@@ -95,12 +101,35 @@ def Clean_main():
     
     run()
     temp()
-    time.sleep(float(1))
     select_all()
     time.sleep(float(1))
     perma_del()
     time.sleep(float(1))
     skip()
+    time.sleep(float(1))
+    close_win()
+    run()
+    temp_perc()
+    select_all()
+    time.sleep(float(1))
+    perma_del()
+    time.sleep(float(1))
+    skip()
+    enter()
+    close_win()
+    time.sleep(float(1))
+    run()
+    prefetch()
+    enter()
+    select_all()
+    time.sleep(float(1))
+    perma_del()
+    time.sleep(float(1))
+    skip()
+    close_win()
+    time.sleep(float(1))
+    run()
+    tree()
     
 
 
