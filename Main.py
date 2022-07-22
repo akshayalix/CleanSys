@@ -15,3 +15,9 @@ import time
 global currentVersion 
 global author
 global name
+
+currentVersion = 1.0   # Vesion info
+
+author = "Alix"   # Author info
+
+name = "CleanSys"  # Script Name
