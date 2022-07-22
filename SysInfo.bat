@@ -15,5 +15,19 @@ ECHO                                            ===============
 ECHO                                            =    HELLO    =
 ECHO                                            ===============
 
+:: Section 1: windows information.
+
+ECHO.
+ECHO                                         ======================
+ECHO                                         =    WINDOWS INFO    =
+ECHO                                         ======================
+ECHO.
+
+Systeminfo | findstr /c:"Total Physical Memory"
+wmic cpu get Name
+wmic diskdrive get name,model,size
+wmic path win32_videocontroller get name
+
+
 
 PAUSE
