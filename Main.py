@@ -71,6 +71,16 @@ def perma_del():
 
     # Press key_map permanent_delete
 
+def skip():
+    pyautogui.press("up")
+    pyautogui.press("enter")
+    pyautogui.press("down")
+    pyautogui.press("right")
+    pyautogui.press("enter")
+
+    # Initialize skip_protocal
+
+
 
 
 def Clean_main():
@@ -81,6 +91,8 @@ def Clean_main():
     select_all()
     time.sleep(float(1))
     perma_del()
+    time.sleep(float(1))
+    skip()
     
 
 
