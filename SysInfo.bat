@@ -23,11 +23,9 @@ ECHO                                         =    WINDOWS INFO    =
 ECHO                                         ======================
 ECHO.
 
-Systeminfo | findstr /c:"Total Physical Memory"
-wmic cpu get Name
-wmic diskdrive get name,model,size
-wmic path win32_videocontroller get name
-
+Systeminfo | findstr /c:"OS Name"
+Systeminfo | findstr /c:"OS Version"
+Systeminfo | findstr /c:"System Type"
 
 
 PAUSE
