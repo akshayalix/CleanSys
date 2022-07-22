@@ -40,4 +40,15 @@ wmic cpu get Name
 wmic diskdrive get name,model,size
 wmic path win32_videocontroller get name
 
+:: Section 3: Netwwork information.
+
+ECHO.
+ECHO                                       ======================
+ECHO                                       =    NETWORK INFO    =
+ECHO                                       ======================
+ECHO.
+
+ipconfig | findstr IPv4
+ipconfig | findstr IPv6
+
 PAUSE
