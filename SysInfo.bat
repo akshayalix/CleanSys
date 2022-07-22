@@ -8,3 +8,12 @@
 
 TITLE SysInfo
 
+ECHO.
+ECHO.
+
+ECHO                                            ===============
+ECHO                                            =    HELLO    =
+ECHO                                            ===============
+
+
+PAUSE
