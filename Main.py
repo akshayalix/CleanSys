@@ -23,6 +23,39 @@ author = "Alix"   # Author info
 name = "CleanSys"  # Script Name
 
 
+# Global def--
+
+def temp():
+
+    # Clean_stat for only _temp_
+
+    def win():
+        pyautogui.keyDown('win')
+        pyautogui.keyUp('win')
+        time.sleep(float(1))
+    
+        # Open windows pannel
+    
+    def type_run():
+        pyautogui.typewrite('Run')
+        pyautogui.keyDown('Enter')
+        pyautogui.keyUp('Enter')
+        time.sleep(float(1))
+        
+        # Open Run Dailog box
+
+    def type_temp():
+        pyautogui.typewrite('temp')
+        pyautogui.keyDown('Enter')
+        pyautogui.keyUp('Enter')
+        time.sleep(float(1))
+
+        # Types _temp_ in run dailog box
+   
+
+
+
+
 
 
 
