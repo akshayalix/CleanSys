@@ -138,7 +138,7 @@ print("====== Cleaning Done ======")
 
 time.sleep(float(2))
 
-exit()
+quit()
 
     
 
