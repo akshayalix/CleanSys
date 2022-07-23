@@ -111,6 +111,8 @@ def close_win():
 # Main def --
 
 def Clean_main():
+
+    print("=== Clearing _temp_ ===" + "\n")
     
     run()
     temp()
@@ -121,6 +123,9 @@ def Clean_main():
     skip()
     time.sleep(float(1))
     close_win()
+
+    print("=== Clearing _%temp_ ===" + "\n")
+
     run()
     temp_perc()
     select_all()
@@ -130,6 +135,9 @@ def Clean_main():
     skip()
     time.sleep(float(1))
     close_win()
+
+    print("=== Clearing _prefetch_ ===" + "\n")
+
     run()
     prefetch()
     enter()
@@ -140,8 +148,13 @@ def Clean_main():
     skip()
     time.sleep(float(1))
     close_win()
+
+    print("=== Running _tree_ ===" + "\n")
+
     run()
     tree()
+
+    print("=== Cleaning Done ===" + "\n")
 
     # Main Program class
 
