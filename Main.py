@@ -7,6 +7,7 @@ import pyautogui
 # from pynput.keyboard import key, Controller #
 import os
 import time
+from os import system
 
 # keyboard = Controller()  # Define keyboard Controller.
 
@@ -15,6 +16,7 @@ import time
 global currentVersion 
 global author
 global name
+global title 
 
 currentVersion = 1.0   # Vesion info
 
@@ -129,6 +131,13 @@ def Clean_main():
     close_win()
     run()
     tree()
+
+    # Main Program class
+
+
+# Various Ui messages --
+
+title = "CleanSys"  # Title of window
     
 
 
