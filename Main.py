@@ -3,6 +3,7 @@
 
 # Import dependencies --
 
+import sys
 import pyautogui
 # from pynput.keyboard import key, Controller #
 import os
@@ -198,7 +199,7 @@ Clean_main()
 # Quit -- 
 
 time.sleep(float(2))
-quit()
+sys.exit()
 
     
 
