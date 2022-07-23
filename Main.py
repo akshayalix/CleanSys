@@ -7,7 +7,9 @@ import pyautogui
 # from pynput.keyboard import key, Controller #
 import os
 import time
-from os import system
+import ctypes  # for title window_name
+
+#..............................................
 
 # keyboard = Controller()  # Define keyboard Controller.
 
@@ -15,14 +17,21 @@ from os import system
 
 global currentVersion 
 global author
-global name
 global title 
+
+#.........................
+
+# Global variable def --
 
 currentVersion = 1.0   # Vesion info
 
 author = "Alix"   # Author info
 
-name = "CleanSys"  # Script Name
+title = "CleanSys"  # Title of window
+
+ctypes.windll.kernel32.SetConsoleTitleW(title + " v" + str(currentVersion))
+
+#...............................
 
 
 # Global def --
@@ -95,6 +104,8 @@ def close_win():
 
     # To close window
 
+#..........................................
+
 
 
 # Main def --
@@ -134,16 +145,22 @@ def Clean_main():
 
     # Main Program class
 
+#........................................
+
 
 # Various Ui messages --
 
-title = "CleanSys"  # Title of window
+
+
+
+
+
     
 
 
-Clean_main()
 
-print("====== Cleaning Done ======")
+
+
 
 time.sleep(float(2))
 
