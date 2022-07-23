@@ -150,8 +150,32 @@ def Clean_main():
 
 # Various Ui messages --
 
+print()
+print("============================")
+print("=                          =")
+print("=  System Cleaner By " + author + "  =")
+print("=                          =")
+print("============================")
+print()
+print()
+print()
+print("= It will automaticaly clear all the temp files")
+print()
+print()
+print("= temp")
+print("= %temp%")
+print("= prefetch")
+print("= tree")
+print()
+print()
+print()
+print()
+print("==== Cleaning Will Start Now ====")
+print()
+print()
+print()
 
-
+#.....................................
 
 
 
