@@ -133,7 +133,7 @@ def Clean_main():
     time.sleep(float(1))
     close_win()
 
-    print("=== Clearing _%temp_ ===" + "\n")
+    print("=== Clearing _%temp%_ ===" + "\n")
 
     run()
     temp_perc()
