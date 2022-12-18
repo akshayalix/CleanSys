@@ -30,7 +30,7 @@ author = "Alix"   # Author info
 
 title = "CleanSys"  # Title of window
 
-ctypes.windll.kernel32.SetConsoleTitleW(title + " v" + str(currentVersion))
+ctypes.windll.kernel32.SetConsoleTitleW(title + " v" + str(currentVersion) + " By" + author)
 
 #...............................
 
