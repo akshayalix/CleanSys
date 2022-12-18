@@ -145,16 +145,14 @@ def Clean_main():
     time.sleep(float(1))
     close_win()
 
-    print("=== Clearing _prefetch_ ===" + "\n")
+    print("=== Clearing _recycle-bin_ ===" + "\n")
 
     run()
-    prefetch()
+    recycle()
     enter()
     select_all()
     time.sleep(float(1))
     perma_del()
-    time.sleep(float(1))
-    skip()
     time.sleep(float(1))
     close_win()
 
