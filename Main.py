@@ -24,7 +24,7 @@ global title
 
 # Global variable def --
 
-currentVersion = 1.0   # Vesion info
+currentVersion = 2.0   # Vesion info
 
 author = "Alix"   # Author info
 
