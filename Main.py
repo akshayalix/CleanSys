@@ -30,7 +30,7 @@ author = "Alix"   # Author info
 
 title = "CleanSys"  # Title of window
 
-ctypes.windll.kernel32.SetConsoleTitleW(title + " v" + str(currentVersion) + " By" + author)
+ctypes.windll.kernel32.SetConsoleTitleW(title + " v" + str(currentVersion))
 
 #...............................
 
@@ -186,7 +186,7 @@ print()
 print()
 print("= temp")
 print("= %temp%")
-print("= prefetch")
+print("= recycle bin")
 print("= tree")
 print()
 print()
