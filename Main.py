@@ -74,6 +74,14 @@ def tree():
 
     # Types _tree_ in run dailog box
 
+def recycle():
+    pyautogui.typewrite('shell:RecycleBinFolder')
+    pyautogui.keyDown('Enter')
+    pyautogui.keyUp('Enter')
+    time.sleep(float(1))
+
+    # Types _shell:RecycleBinFolder_ in run dailog box
+
     
 def select_all():
     pyautogui.hotkey("ctrl", "a")
