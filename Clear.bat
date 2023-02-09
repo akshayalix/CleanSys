@@ -1,7 +1,7 @@
 @ECHO OFF
 
-del /s /f /q C:\Windows\Prefetch\*.*
+cd /D %temp%
 
-del /s /f /q C:\Windows\Temp\*.*
+for /d %%D in (*) do rd /s /q "%%D"
 
-del /s /f /q %USERPROFILE%\appdata\local\temp\*.*
+del /f /q *
