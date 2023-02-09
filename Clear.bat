@@ -1,6 +1,6 @@
 @ECHO OFF
 
-del /s /f /q C:\Windows\Prefetch\*.* 
+del /s /f /q C:\Windows\Prefetch\*.*
 
 del /s /f /q C:\Windows\Temp\*.*
 
