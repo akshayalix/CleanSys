@@ -27,3 +27,22 @@ Explorer %USERPROFILE%\appdata\local\temp
 
 
 *********END CODE************
+
+
+del won't trigger any dialogs or message boxes. You have a few problems, though:
+
+start will just open Explorer which would be useless. You need cd to change the working directory of your batch file (the /D is there so it also works when run from a different drive):
+
+cd /D %temp%
+You may want to delete directories as well:
+
+for /d %%D in (*) do rd /s /q "%%D"
+You need to skip the question for del and remove read-only files too:
+
+del /f /q *
+so you arrive at:
+
+@echo off
+cd /D %temp%
+for /d %%D in (*) do rd /s /q "%%D"
+del /f /q *
