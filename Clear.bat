@@ -1,3 +1,10 @@
+:: A script to clean basic directories for windows.
+:: By Alix
+:: version=1.2
+
+
+:: Main
+
 @ECHO OFF
 
 :: Clear %temp% 
