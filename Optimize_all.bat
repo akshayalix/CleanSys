@@ -5,5 +5,4 @@ for %%i in (%drives%) do (
     echo Optimizing drive %%i:
     defrag %%i: /O /V
 )
-pause
 
